@@ -1,0 +1,2543 @@
+[
+  {
+    "id": "business-conversation-1",
+    "term": "How are you doing?",
+    "normalizedTerm": "how are you doing?",
+    "translations": [
+      "Як справи?",
+      "Как дела?"
+    ],
+    "acceptedAnswers": [
+      "how are you doing?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 1,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-2",
+    "term": "How’s your day going?",
+    "normalizedTerm": "how’s your day going?",
+    "translations": [
+      "Як проходить день?",
+      "Как проходит день?"
+    ],
+    "acceptedAnswers": [
+      "how’s your day going?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 2,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-3",
+    "term": "Thanks for joining.",
+    "normalizedTerm": "thanks for joining.",
+    "translations": [
+      "Дякую, що приєдналися.",
+      "Спасибо, что присоединились."
+    ],
+    "acceptedAnswers": [
+      "thanks for joining."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 3,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-4",
+    "term": "Let’s get started.",
+    "normalizedTerm": "let’s get started.",
+    "translations": [
+      "Почнімо.",
+      "Давайте начнем."
+    ],
+    "acceptedAnswers": [
+      "let’s get started."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 4,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-5",
+    "term": "Shall we start?",
+    "normalizedTerm": "shall we start?",
+    "translations": [
+      "Починаємо?",
+      "Начнем?"
+    ],
+    "acceptedAnswers": [
+      "shall we start?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 5,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-6",
+    "term": "I’d like to quickly discuss...",
+    "normalizedTerm": "i’d like to quickly discuss...",
+    "translations": [
+      "Я хотів би швидко обговорити...",
+      "Я хотел бы быстро обсудить..."
+    ],
+    "acceptedAnswers": [
+      "i’d like to quickly discuss..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opening.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opening"
+    ],
+    "frequencyRank": 6,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opening"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-7",
+    "term": "From my point of view...",
+    "normalizedTerm": "from my point of view...",
+    "translations": [
+      "З моєї точки зору...",
+      "С моей точки зрения..."
+    ],
+    "acceptedAnswers": [
+      "from my point of view..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 7,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-8",
+    "term": "As far as I understand...",
+    "normalizedTerm": "as far as i understand...",
+    "translations": [
+      "Наскільки я розумію...",
+      "Насколько я понимаю..."
+    ],
+    "acceptedAnswers": [
+      "as far as i understand..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 8,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-9",
+    "term": "What I mean is...",
+    "normalizedTerm": "what i mean is...",
+    "translations": [
+      "Я маю на увазі...",
+      "Я имею в виду..."
+    ],
+    "acceptedAnswers": [
+      "what i mean is..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 9,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-10",
+    "term": "The main point is...",
+    "normalizedTerm": "the main point is...",
+    "translations": [
+      "Головна ідея в тому, що...",
+      "Основная мысль в том, что..."
+    ],
+    "acceptedAnswers": [
+      "the main point is..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 10,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-11",
+    "term": "To be honest, I think...",
+    "normalizedTerm": "to be honest, i think...",
+    "translations": [
+      "Чесно кажучи, я думаю...",
+      "Честно говоря, я думаю..."
+    ],
+    "acceptedAnswers": [
+      "to be honest, i think..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 11,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-12",
+    "term": "I’d say that...",
+    "normalizedTerm": "i’d say that...",
+    "translations": [
+      "Я б сказав, що...",
+      "Я бы сказал, что..."
+    ],
+    "acceptedAnswers": [
+      "i’d say that..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: opinion.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "opinion"
+    ],
+    "frequencyRank": 12,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "opinion"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-13",
+    "term": "Could you clarify that, please?",
+    "normalizedTerm": "could you clarify that, please?",
+    "translations": [
+      "Можеш уточнити?",
+      "Можешь уточнить?"
+    ],
+    "acceptedAnswers": [
+      "could you clarify that, please?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 13,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-14",
+    "term": "Could you give me more context?",
+    "normalizedTerm": "could you give me more context?",
+    "translations": [
+      "Можеш дати більше контексту?",
+      "Можешь дать больше контекста?"
+    ],
+    "acceptedAnswers": [
+      "could you give me more context?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 14,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-15",
+    "term": "Do you mean that...?",
+    "normalizedTerm": "do you mean that...?",
+    "translations": [
+      "Ти маєш на увазі, що...?",
+      "Ты имеешь в виду, что...?"
+    ],
+    "acceptedAnswers": [
+      "do you mean that...?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 15,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-16",
+    "term": "Just to make sure I understood correctly...",
+    "normalizedTerm": "just to make sure i understood correctly...",
+    "translations": [
+      "Щоб переконатися, що я правильно зрозумів...",
+      "Чтобы убедиться, что я правильно понял..."
+    ],
+    "acceptedAnswers": [
+      "just to make sure i understood correctly..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 16,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-17",
+    "term": "Could you repeat that, please?",
+    "normalizedTerm": "could you repeat that, please?",
+    "translations": [
+      "Можеш повторити?",
+      "Можешь повторить?"
+    ],
+    "acceptedAnswers": [
+      "could you repeat that, please?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 17,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-18",
+    "term": "Could you say that in another way?",
+    "normalizedTerm": "could you say that in another way?",
+    "translations": [
+      "Можеш сказати це іншими словами?",
+      "Можешь сказать это по-другому?"
+    ],
+    "acceptedAnswers": [
+      "could you say that in another way?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: clarify.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "clarify"
+    ],
+    "frequencyRank": 18,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "clarify"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-19",
+    "term": "Sorry, I didn’t catch that.",
+    "normalizedTerm": "sorry, i didn’t catch that.",
+    "translations": [
+      "Вибач, я не вловив.",
+      "Извини, я не уловил."
+    ],
+    "acceptedAnswers": [
+      "sorry, i didn’t catch that."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: misunderstanding.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "misunderstanding"
+    ],
+    "frequencyRank": 19,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "misunderstanding"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-20",
+    "term": "I’m not sure I fully understand.",
+    "normalizedTerm": "i’m not sure i fully understand.",
+    "translations": [
+      "Я не впевнений, що повністю зрозумів.",
+      "Я не уверен, что полностью понял."
+    ],
+    "acceptedAnswers": [
+      "i’m not sure i fully understand."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: misunderstanding.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "misunderstanding"
+    ],
+    "frequencyRank": 20,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "misunderstanding"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-21",
+    "term": "I’m a bit confused about this part.",
+    "normalizedTerm": "i’m a bit confused about this part.",
+    "translations": [
+      "Я трохи заплутався в цій частині.",
+      "Я немного запутался в этой части."
+    ],
+    "acceptedAnswers": [
+      "i’m a bit confused about this part."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: misunderstanding.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "misunderstanding"
+    ],
+    "frequencyRank": 21,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "misunderstanding"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-22",
+    "term": "Could you explain it step by step?",
+    "normalizedTerm": "could you explain it step by step?",
+    "translations": [
+      "Можеш пояснити покроково?",
+      "Можешь объяснить пошагово?"
+    ],
+    "acceptedAnswers": [
+      "could you explain it step by step?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: misunderstanding.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "misunderstanding"
+    ],
+    "frequencyRank": 22,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "misunderstanding"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-23",
+    "term": "I agree.",
+    "normalizedTerm": "i agree.",
+    "translations": [
+      "Я згоден.",
+      "Я согласен."
+    ],
+    "acceptedAnswers": [
+      "i agree."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: agreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "agreement"
+    ],
+    "frequencyRank": 23,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "agreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-24",
+    "term": "That makes sense.",
+    "normalizedTerm": "that makes sense.",
+    "translations": [
+      "Це має сенс.",
+      "В этом есть смысл."
+    ],
+    "acceptedAnswers": [
+      "that makes sense."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: agreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "agreement"
+    ],
+    "frequencyRank": 24,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "agreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-25",
+    "term": "Sounds good to me.",
+    "normalizedTerm": "sounds good to me.",
+    "translations": [
+      "Мені підходить.",
+      "Меня устраивает."
+    ],
+    "acceptedAnswers": [
+      "sounds good to me."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: agreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "agreement"
+    ],
+    "frequencyRank": 25,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "agreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-26",
+    "term": "I’m on the same page.",
+    "normalizedTerm": "i’m on the same page.",
+    "translations": [
+      "Я на тій самій хвилі.",
+      "Я на той же волне."
+    ],
+    "acceptedAnswers": [
+      "i’m on the same page."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: agreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "agreement"
+    ],
+    "frequencyRank": 26,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "agreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-27",
+    "term": "Exactly.",
+    "normalizedTerm": "exactly.",
+    "translations": [
+      "Саме так.",
+      "Именно."
+    ],
+    "acceptedAnswers": [
+      "exactly."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: agreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "agreement"
+    ],
+    "frequencyRank": 27,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "agreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-28",
+    "term": "I see your point, but...",
+    "normalizedTerm": "i see your point, but...",
+    "translations": [
+      "Я розумію твою думку, але...",
+      "Я понимаю твою мысль, но..."
+    ],
+    "acceptedAnswers": [
+      "i see your point, but..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: soft-disagreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "soft-disagreement"
+    ],
+    "frequencyRank": 28,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "soft-disagreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-29",
+    "term": "I’m not sure I agree with that.",
+    "normalizedTerm": "i’m not sure i agree with that.",
+    "translations": [
+      "Я не впевнений, що згоден з цим.",
+      "Я не уверен, что согласен с этим."
+    ],
+    "acceptedAnswers": [
+      "i’m not sure i agree with that."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: soft-disagreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "soft-disagreement"
+    ],
+    "frequencyRank": 29,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "soft-disagreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-30",
+    "term": "I have a slightly different view.",
+    "normalizedTerm": "i have a slightly different view.",
+    "translations": [
+      "У мене трохи інший погляд.",
+      "У меня немного другой взгляд."
+    ],
+    "acceptedAnswers": [
+      "i have a slightly different view."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: soft-disagreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "soft-disagreement"
+    ],
+    "frequencyRank": 30,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "soft-disagreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-31",
+    "term": "That might work, but I’m concerned about...",
+    "normalizedTerm": "that might work, but i’m concerned about...",
+    "translations": [
+      "Це може спрацювати, але мене турбує...",
+      "Это может сработать, но меня беспокоит..."
+    ],
+    "acceptedAnswers": [
+      "that might work, but i’m concerned about..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B2",
+    "context": "Business conversation: soft-disagreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "soft-disagreement"
+    ],
+    "frequencyRank": 31,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "soft-disagreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-32",
+    "term": "I’d suggest a different approach.",
+    "normalizedTerm": "i’d suggest a different approach.",
+    "translations": [
+      "Я б запропонував інший підхід.",
+      "Я бы предложил другой подход."
+    ],
+    "acceptedAnswers": [
+      "i’d suggest a different approach."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: soft-disagreement.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "soft-disagreement"
+    ],
+    "frequencyRank": 32,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "soft-disagreement"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-33",
+    "term": "I suggest we...",
+    "normalizedTerm": "i suggest we...",
+    "translations": [
+      "Я пропоную, щоб ми...",
+      "Я предлагаю, чтобы мы..."
+    ],
+    "acceptedAnswers": [
+      "i suggest we..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: solution.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "solution"
+    ],
+    "frequencyRank": 33,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "solution"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-34",
+    "term": "Maybe we could...",
+    "normalizedTerm": "maybe we could...",
+    "translations": [
+      "Можливо, ми могли б...",
+      "Возможно, мы могли бы..."
+    ],
+    "acceptedAnswers": [
+      "maybe we could..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: solution.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "solution"
+    ],
+    "frequencyRank": 34,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "solution"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-35",
+    "term": "One option would be to...",
+    "normalizedTerm": "one option would be to...",
+    "translations": [
+      "Один із варіантів — це...",
+      "Один из вариантов — это..."
+    ],
+    "acceptedAnswers": [
+      "one option would be to..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: solution.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "solution"
+    ],
+    "frequencyRank": 35,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "solution"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-36",
+    "term": "The best approach might be...",
+    "normalizedTerm": "the best approach might be...",
+    "translations": [
+      "Найкращий підхід може бути...",
+      "Лучший подход может быть..."
+    ],
+    "acceptedAnswers": [
+      "the best approach might be..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B2",
+    "context": "Business conversation: solution.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "solution"
+    ],
+    "frequencyRank": 36,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "solution"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-37",
+    "term": "Let’s consider...",
+    "normalizedTerm": "let’s consider...",
+    "translations": [
+      "Давайте розглянемо...",
+      "Давайте рассмотрим..."
+    ],
+    "acceptedAnswers": [
+      "let’s consider..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: solution.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "solution"
+    ],
+    "frequencyRank": 37,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "solution"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-38",
+    "term": "What’s the current status?",
+    "normalizedTerm": "what’s the current status?",
+    "translations": [
+      "Який поточний статус?",
+      "Какой текущий статус?"
+    ],
+    "acceptedAnswers": [
+      "what’s the current status?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 38,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-39",
+    "term": "Is there any blocker?",
+    "normalizedTerm": "is there any blocker?",
+    "translations": [
+      "Є якісь блокери?",
+      "Есть какие-то блокеры?"
+    ],
+    "acceptedAnswers": [
+      "is there any blocker?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 39,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-40",
+    "term": "I’m currently working on...",
+    "normalizedTerm": "i’m currently working on...",
+    "translations": [
+      "Я зараз працюю над...",
+      "Я сейчас работаю над..."
+    ],
+    "acceptedAnswers": [
+      "i’m currently working on..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 40,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-41",
+    "term": "I’ve finished...",
+    "normalizedTerm": "i’ve finished...",
+    "translations": [
+      "Я завершив...",
+      "Я завершил..."
+    ],
+    "acceptedAnswers": [
+      "i’ve finished..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 41,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-42",
+    "term": "I’m still investigating this issue.",
+    "normalizedTerm": "i’m still investigating this issue.",
+    "translations": [
+      "Я все ще досліджую цю проблему.",
+      "Я все еще исследую эту проблему."
+    ],
+    "acceptedAnswers": [
+      "i’m still investigating this issue."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 42,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-43",
+    "term": "This task is almost done.",
+    "normalizedTerm": "this task is almost done.",
+    "translations": [
+      "Ця задача майже готова.",
+      "Эта задача почти готова."
+    ],
+    "acceptedAnswers": [
+      "this task is almost done."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 43,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-44",
+    "term": "It needs more time.",
+    "normalizedTerm": "it needs more time.",
+    "translations": [
+      "Потрібно більше часу.",
+      "Нужно больше времени."
+    ],
+    "acceptedAnswers": [
+      "it needs more time."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: status.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "status"
+    ],
+    "frequencyRank": 44,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "status"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-45",
+    "term": "We’ve run into an issue.",
+    "normalizedTerm": "we’ve run into an issue.",
+    "translations": [
+      "Ми зіткнулися з проблемою.",
+      "Мы столкнулись с проблемой."
+    ],
+    "acceptedAnswers": [
+      "we’ve run into an issue."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 45,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-46",
+    "term": "There is a problem with...",
+    "normalizedTerm": "there is a problem with...",
+    "translations": [
+      "Є проблема з...",
+      "Есть проблема с..."
+    ],
+    "acceptedAnswers": [
+      "there is a problem with..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 46,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-47",
+    "term": "The main blocker is...",
+    "normalizedTerm": "the main blocker is...",
+    "translations": [
+      "Основний блокер — це...",
+      "Основной блокер — это..."
+    ],
+    "acceptedAnswers": [
+      "the main blocker is..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 47,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-48",
+    "term": "It doesn’t work as expected.",
+    "normalizedTerm": "it doesn’t work as expected.",
+    "translations": [
+      "Це не працює як очікувалось.",
+      "Это не работает как ожидалось."
+    ],
+    "acceptedAnswers": [
+      "it doesn’t work as expected."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 48,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-49",
+    "term": "We need to investigate it further.",
+    "normalizedTerm": "we need to investigate it further.",
+    "translations": [
+      "Нам потрібно дослідити це глибше.",
+      "Нам нужно изучить это глубже."
+    ],
+    "acceptedAnswers": [
+      "we need to investigate it further."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 49,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-50",
+    "term": "I’ll take a closer look.",
+    "normalizedTerm": "i’ll take a closer look.",
+    "translations": [
+      "Я подивлюся детальніше.",
+      "Я посмотрю внимательнее."
+    ],
+    "acceptedAnswers": [
+      "i’ll take a closer look."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: issue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "issue"
+    ],
+    "frequencyRank": 50,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "issue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-51",
+    "term": "What’s the deadline for this?",
+    "normalizedTerm": "what’s the deadline for this?",
+    "translations": [
+      "Який дедлайн для цього?",
+      "Какой дедлайн для этого?"
+    ],
+    "acceptedAnswers": [
+      "what’s the deadline for this?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 51,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-52",
+    "term": "Is this urgent?",
+    "normalizedTerm": "is this urgent?",
+    "translations": [
+      "Це терміново?",
+      "Это срочно?"
+    ],
+    "acceptedAnswers": [
+      "is this urgent?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 52,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-53",
+    "term": "What’s the priority?",
+    "normalizedTerm": "what’s the priority?",
+    "translations": [
+      "Який пріоритет?",
+      "Какой приоритет?"
+    ],
+    "acceptedAnswers": [
+      "what’s the priority?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 53,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-54",
+    "term": "Can we move this to the next sprint?",
+    "normalizedTerm": "can we move this to the next sprint?",
+    "translations": [
+      "Можемо перенести це на наступний спринт?",
+      "Можем перенести это на следующий спринт?"
+    ],
+    "acceptedAnswers": [
+      "can we move this to the next sprint?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 54,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-55",
+    "term": "This might take longer than expected.",
+    "normalizedTerm": "this might take longer than expected.",
+    "translations": [
+      "Це може зайняти більше часу, ніж очікувалося.",
+      "Это может занять больше времени, чем ожидалось."
+    ],
+    "acceptedAnswers": [
+      "this might take longer than expected."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 55,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-56",
+    "term": "I can deliver it by tomorrow.",
+    "normalizedTerm": "i can deliver it by tomorrow.",
+    "translations": [
+      "Я можу зробити це до завтра.",
+      "Я могу сделать это к завтрашнему дню."
+    ],
+    "acceptedAnswers": [
+      "i can deliver it by tomorrow."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: priority.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "priority"
+    ],
+    "frequencyRank": 56,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "priority"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-57",
+    "term": "Can we schedule a quick call?",
+    "normalizedTerm": "can we schedule a quick call?",
+    "translations": [
+      "Можемо запланувати короткий дзвінок?",
+      "Можем запланировать короткий звонок?"
+    ],
+    "acceptedAnswers": [
+      "can we schedule a quick call?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 57,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-58",
+    "term": "Let’s sync on this later.",
+    "normalizedTerm": "let’s sync on this later.",
+    "translations": [
+      "Давайте синхронізуємось щодо цього пізніше.",
+      "Давайте синхронизируемся по этому позже."
+    ],
+    "acceptedAnswers": [
+      "let’s sync on this later."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 58,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-59",
+    "term": "Can we go through this together?",
+    "normalizedTerm": "can we go through this together?",
+    "translations": [
+      "Можемо пройтися по цьому разом?",
+      "Можем пройтись по этому вместе?"
+    ],
+    "acceptedAnswers": [
+      "can we go through this together?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 59,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-60",
+    "term": "Let’s discuss it offline.",
+    "normalizedTerm": "let’s discuss it offline.",
+    "translations": [
+      "Давайте обговоримо це окремо, не на цьому мітингу.",
+      "Давайте обсудим это отдельно, не на этой встрече."
+    ],
+    "acceptedAnswers": [
+      "let’s discuss it offline."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 60,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-61",
+    "term": "We’re running out of time.",
+    "normalizedTerm": "we’re running out of time.",
+    "translations": [
+      "У нас закінчується час.",
+      "У нас заканчивается время."
+    ],
+    "acceptedAnswers": [
+      "we’re running out of time."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 61,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-62",
+    "term": "Let’s move on to the next topic.",
+    "normalizedTerm": "let’s move on to the next topic.",
+    "translations": [
+      "Переходимо до наступної теми.",
+      "Перейдем к следующей теме."
+    ],
+    "acceptedAnswers": [
+      "let’s move on to the next topic."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: meeting.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "meeting"
+    ],
+    "frequencyRank": 62,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "meeting"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-63",
+    "term": "To summarize...",
+    "normalizedTerm": "to summarize...",
+    "translations": [
+      "Підсумовуючи...",
+      "Подводя итог..."
+    ],
+    "acceptedAnswers": [
+      "to summarize..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 63,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-64",
+    "term": "The next steps are...",
+    "normalizedTerm": "the next steps are...",
+    "translations": [
+      "Наступні кроки такі...",
+      "Следующие шаги такие..."
+    ],
+    "acceptedAnswers": [
+      "the next steps are..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 64,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-65",
+    "term": "I’ll follow up with you later.",
+    "normalizedTerm": "i’ll follow up with you later.",
+    "translations": [
+      "Я повернуся до тебе з цим пізніше.",
+      "Я вернусь к тебе с этим позже."
+    ],
+    "acceptedAnswers": [
+      "i’ll follow up with you later."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 65,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-66",
+    "term": "I’ll send an update in Slack.",
+    "normalizedTerm": "i’ll send an update in slack.",
+    "translations": [
+      "Я надішлю апдейт у Slack.",
+      "Я отправлю обновление в Slack."
+    ],
+    "acceptedAnswers": [
+      "i’ll send an update in slack."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 66,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-67",
+    "term": "Thanks, everyone.",
+    "normalizedTerm": "thanks, everyone.",
+    "translations": [
+      "Дякую всім.",
+      "Спасибо всем."
+    ],
+    "acceptedAnswers": [
+      "thanks, everyone."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 67,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-68",
+    "term": "Have a good day.",
+    "normalizedTerm": "have a good day.",
+    "translations": [
+      "Гарного дня.",
+      "Хорошего дня."
+    ],
+    "acceptedAnswers": [
+      "have a good day."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: closing.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "closing"
+    ],
+    "frequencyRank": 68,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "closing"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-69",
+    "term": "Let me think for a second.",
+    "normalizedTerm": "let me think for a second.",
+    "translations": [
+      "Дай мені секунду подумати.",
+      "Дай мне секунду подумать."
+    ],
+    "acceptedAnswers": [
+      "let me think for a second."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 69,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-70",
+    "term": "How can I put it...",
+    "normalizedTerm": "how can i put it...",
+    "translations": [
+      "Як би це сказати...",
+      "Как бы это сказать..."
+    ],
+    "acceptedAnswers": [
+      "how can i put it..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 70,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-71",
+    "term": "What’s the right word...?",
+    "normalizedTerm": "what’s the right word...?",
+    "translations": [
+      "Яке правильне слово...?",
+      "Какое правильное слово...?"
+    ],
+    "acceptedAnswers": [
+      "what’s the right word...?"
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 71,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-72",
+    "term": "I mean...",
+    "normalizedTerm": "i mean...",
+    "translations": [
+      "Я маю на увазі...",
+      "Я имею в виду..."
+    ],
+    "acceptedAnswers": [
+      "i mean..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 72,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-73",
+    "term": "Basically...",
+    "normalizedTerm": "basically...",
+    "translations": [
+      "В основному...",
+      "В основном..."
+    ],
+    "acceptedAnswers": [
+      "basically..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 73,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-74",
+    "term": "In other words...",
+    "normalizedTerm": "in other words...",
+    "translations": [
+      "Іншими словами...",
+      "Иными словами..."
+    ],
+    "acceptedAnswers": [
+      "in other words..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 74,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-75",
+    "term": "The idea is that...",
+    "normalizedTerm": "the idea is that...",
+    "translations": [
+      "Ідея в тому, що...",
+      "Идея в том, что..."
+    ],
+    "acceptedAnswers": [
+      "the idea is that..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 75,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-76",
+    "term": "It depends on...",
+    "normalizedTerm": "it depends on...",
+    "translations": [
+      "Це залежить від...",
+      "Это зависит от..."
+    ],
+    "acceptedAnswers": [
+      "it depends on..."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "A2",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 76,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  },
+  {
+    "id": "business-conversation-77",
+    "term": "I need to double-check that.",
+    "normalizedTerm": "i need to double-check that.",
+    "translations": [
+      "Мені потрібно це перевірити.",
+      "Мне нужно это проверить."
+    ],
+    "acceptedAnswers": [
+      "i need to double-check that."
+    ],
+    "type": "sentence",
+    "topic": "management",
+    "level": "B1",
+    "context": "Business conversation: glue.",
+    "note": "Curated phrase for meetings, calls, status updates, and work communication.",
+    "tags": [
+      "business-conversation",
+      "work-communication",
+      "glue"
+    ],
+    "frequencyRank": 77,
+    "source": "curated",
+    "sourceTopics": [
+      "management",
+      "business-conversation",
+      "glue"
+    ],
+    "sourceLanguages": [
+      "uk",
+      "ru"
+    ]
+  }
+]
