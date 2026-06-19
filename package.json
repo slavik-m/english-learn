@@ -1,0 +1,24 @@
+{
+  "name": "english-learn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:dictionary": "node ./scripts/build-dictionary.mjs && python ./scripts/augment-dictionary.py",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.0",
+    "sharp": "^0.35.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vite-plugin-pwa": "^1.3.0",
+    "vite-plugin-solid": "^2.11.12"
+  },
+  "dependencies": {
+    "idb": "^8.0.3",
+    "solid-js": "^1.9.13"
+  }
+}
