@@ -13,6 +13,7 @@ import {
   createManualEntry,
   ensureSeedEntries,
   getAllEntries,
+  importSourceTopicPack,
   importStarterPack,
   saveEntry,
 } from "./lib/db";
@@ -27,7 +28,7 @@ import { type DictionaryEntry, type Entry, type EntryType, type LearningStatus, 
 type MainScreen = "learn" | "practice";
 type PracticeMode = "manual" | "choice";
 type PracticeVerdict = "correct" | "almost" | "wrong";
-type Overlay = null | "menu" | "stats" | "filters" | "add";
+type Overlay = null | "menu" | "stats" | "filters" | "search" | "add";
 type InstallPromptEvent = Event & {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: "accepted" | "dismissed"; platform: string }>;
@@ -107,6 +108,20 @@ const buildPracticeOrder = (items: Entry[]) =>
     };
 
     return score(right) - score(left);
+  });
+
+const buildLearnOrder = (items: Entry[]) =>
+  [...items].sort((left, right) => {
+    const priority = (entry: Entry) => {
+      if (entry.status === "difficult") return 0;
+      if (entry.status === "learning") return 1;
+      if (entry.status === "new") return 2;
+      return 3;
+    };
+
+    const byPriority = priority(left) - priority(right);
+    if (byPriority !== 0) return byPriority;
+    return (left.frequencyRank ?? 99999) - (right.frequencyRank ?? 99999);
   });
 
 const levenshteinDistance = (left: string, right: string) => {
@@ -319,7 +334,7 @@ export const App = () => {
     };
   });
 
-  const learnPool = createMemo(() => (entries() ?? []).filter((entry) => matchesFilter(entry, filters())));
+  const learnPool = createMemo(() => buildLearnOrder((entries() ?? []).filter((entry) => matchesFilter(entry, filters()))));
   const practicePool = createMemo(() =>
     buildPracticeOrder((entries() ?? []).filter((entry) => matchesFilter(entry, filters()))),
   );
@@ -413,6 +428,23 @@ export const App = () => {
   };
 
   const updateEntryStatus = async (entry: Entry, status: LearningStatus) => {
+    const currentFilters = filters();
+    const currentEntries = entries() ?? [];
+    const nextActiveCount =
+      currentFilters.topic !== "all"
+        ? currentEntries.filter((candidate) => {
+            if (candidate.topic !== currentFilters.topic) return false;
+            if (candidate.id === entry.id) return status !== "known";
+            return candidate.status !== "known";
+          }).length
+        : 0;
+
+    const shouldTopUpTopicPack =
+      currentFilters.topic !== "all" &&
+      !currentFilters.search &&
+      currentFilters.status !== "known" &&
+      nextActiveCount <= 8;
+
     const updated: Entry = {
       ...entry,
       status,
@@ -424,6 +456,15 @@ export const App = () => {
     };
     await saveEntry(updated);
     await refetch();
+    if (shouldTopUpTopicPack) {
+      const imported = await importStarterPack(currentFilters.topic as Topic, 24);
+      if (imported > 0) {
+        await refetch();
+      }
+    }
+    if (learnPool().length > 1) {
+      setLearnIndex((current) => current + 1);
+    }
   };
 
   const handleSuggestionPick = (item: DictionaryEntry) => {
@@ -466,6 +507,16 @@ export const App = () => {
     const imported = await importStarterPack(topic, 48);
     await refetch();
     setPackMessage(imported > 0 ? `Imported ${imported} more ${topic} entries.` : `No new ${topic} entries left to import.`);
+  };
+
+  const handleBusinessConversationImport = async () => {
+    const imported = await importSourceTopicPack("business-conversation", 72);
+    await refetch();
+    setPackMessage(
+      imported > 0
+        ? `Imported ${imported} business conversation phrases.`
+        : "No new business conversation phrases left to import.",
+    );
   };
 
   const handlePracticeVerdict = async (verdict: PracticeVerdict, selectedChoice?: string) => {
@@ -539,7 +590,7 @@ export const App = () => {
                 <span class="screen-title">Learn</span>
                 <small>{learnPositionLabel()}</small>
               </div>
-              <button class="tool-button" type="button" onClick={() => setOverlay("filters")} aria-label="Search">
+              <button class="tool-button" type="button" onClick={() => setOverlay("search")} aria-label="Search">
                 <SearchIcon />
               </button>
             </div>
@@ -569,7 +620,7 @@ export const App = () => {
 
                   <div class="card-footer">
                     <button class="ghost-action" type="button" onClick={() => void updateEntryStatus(entry(), "difficult")}>
-                      Again
+                      Review
                     </button>
                     <button class="ghost-action" type="button" onClick={() => speakEntry(entry())}>
                       {speakingId() === entry().id ? "Speaking..." : "Speak"}
@@ -770,20 +821,13 @@ export const App = () => {
                 </div>
                 <div class="overlay-form">
                   <label class="overlay-field">
-                    <span>Search</span>
-                    <input
-                      value={filters().search}
-                      onInput={(event) => setFilters((current) => ({ ...current, search: event.currentTarget.value }))}
-                      placeholder="Search term or translation"
-                    />
-                  </label>
-                  <label class="overlay-field">
                     <span>Topic</span>
                     <select
                       value={filters().topic}
                       onChange={(event) => setFilters((current) => ({ ...current, topic: event.currentTarget.value as FilterState["topic"] }))}
                     >
                       <option value="all">All</option>
+                      <option value="general">General</option>
                       <option value="it">IT</option>
                       <option value="software">Software</option>
                       <option value="management">Management</option>
@@ -826,6 +870,39 @@ export const App = () => {
                       <option value="difficult">Difficult</option>
                     </select>
                   </label>
+                </div>
+              </div>
+            </Show>
+
+            <Show when={overlay() === "search"}>
+              <div class="overlay-content">
+                <div class="overlay-head">
+                  <h3>Search</h3>
+                  <button class="close-button" type="button" onClick={() => setOverlay(null)}>
+                    Close
+                  </button>
+                </div>
+                <div class="overlay-form">
+                  <label class="overlay-field">
+                    <span>Term or translation</span>
+                    <input
+                      value={filters().search}
+                      onInput={(event) => setFilters((current) => ({ ...current, search: event.currentTarget.value }))}
+                      placeholder="Search term or translation"
+                    />
+                  </label>
+                  <div class="overlay-actions">
+                    <button
+                      class="ghost-action full-width"
+                      type="button"
+                      onClick={() => setFilters((current) => ({ ...current, search: "" }))}
+                    >
+                      Clear Search
+                    </button>
+                    <button class="primary-action full-width" type="button" onClick={() => setOverlay(null)}>
+                      Done
+                    </button>
+                  </div>
                 </div>
               </div>
             </Show>
@@ -912,6 +989,7 @@ export const App = () => {
                       value={draft().topic}
                       onChange={(event) => setDraft((current) => ({ ...current, topic: event.currentTarget.value as Topic }))}
                     >
+                      <option value="general">General</option>
                       <option value="it">IT</option>
                       <option value="software">Software</option>
                       <option value="management">Management</option>
@@ -955,7 +1033,10 @@ export const App = () => {
 
                 <div class="packs-block">
                   <h4>Starter Packs</h4>
-                  <div class="overlay-actions">
+                    <div class="overlay-actions">
+                    <button class="ghost-action full-width" type="button" onClick={() => void handleStarterImport("general")}>
+                      Import Common English Pack
+                    </button>
                     <button class="ghost-action full-width" type="button" onClick={() => void handleStarterImport("it")}>
                       Import IT Pack
                     </button>
@@ -964,6 +1045,9 @@ export const App = () => {
                     </button>
                     <button class="ghost-action full-width" type="button" onClick={() => void handleStarterImport("management")}>
                       Import Management Pack
+                    </button>
+                    <button class="ghost-action full-width" type="button" onClick={() => void handleBusinessConversationImport()}>
+                      Import Business Conversation Pack
                     </button>
                   </div>
                   <Show when={packMessage()}>

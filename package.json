@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build:dictionary": "node ./scripts/build-dictionary.mjs && python ./scripts/augment-dictionary.py",
+    "build:dictionary": "node ./scripts/build-dictionary.mjs && python ./scripts/augment-dictionary.py && node ./scripts/build-common-english.mjs && node ./scripts/build-business-conversation.mjs",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

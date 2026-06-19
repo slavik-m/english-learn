@@ -1,6 +1,6 @@
 import { openDB, type DBSchema } from "idb";
-import { loadDictionaryEntries } from "./dictionary-store";
-import { type DictionaryEntry, type Entry, type Topic } from "../types";
+import { loadDictionaryEntries, normalizeTerm } from "./dictionary-store";
+import { type DictionaryEntry, type Entry, type EntryType, type Topic } from "../types";
 
 type MetaRecord = {
   key: string;
@@ -25,7 +25,7 @@ interface EnglishLearnDb extends DBSchema {
 
 const DB_NAME = "english-learn-db";
 const DB_VERSION = 1;
-const SEED_VERSION = "2026-06-19-seed-v2";
+const SEED_VERSION = "2026-06-19-seed-v6";
 
 const dbPromise = openDB<EnglishLearnDb>(DB_NAME, DB_VERSION, {
   upgrade(db) {
@@ -50,8 +50,8 @@ export const ensureSeedEntries = async () => {
     return;
   }
 
-  const tx = db.transaction(["entries", "meta"], "readwrite");
   const starterEntries = await getStarterEntries();
+  const tx = db.transaction(["entries", "meta"], "readwrite");
 
   for (const entry of starterEntries) {
     await tx.objectStore("entries").put(entry);
@@ -76,9 +76,9 @@ const timestamp = () => new Date().toISOString();
 export const createEntryFromDictionary = (item: DictionaryEntry): Entry => ({
   id: `entry-${item.id}`,
   term: item.term,
-  normalizedTerm: item.normalizedTerm,
+  normalizedTerm: normalizeTerm(item.term),
   translations: item.translations,
-  acceptedAnswers: item.acceptedAnswers,
+  acceptedAnswers: item.acceptedAnswers.map(normalizeTerm),
   type: item.type,
   topic: item.topic,
   level: item.level,
@@ -101,15 +101,15 @@ export const createManualEntry = (
     tags?: string[];
   },
 ): Entry => {
-  const normalizedTerm = normalizeTerm(draft.term);
+  const normalizedEntryTerm = normalizeTerm(draft.term);
 
   return {
-    id: `manual-${normalizedTerm}-${Date.now()}`,
+    id: `manual-${normalizedEntryTerm}-${Date.now()}`,
     term: draft.term.trim(),
-    normalizedTerm,
+    normalizedTerm: normalizedEntryTerm,
     translations: draft.translations.map((item) => item.trim()).filter(Boolean),
     acceptedAnswers:
-      draft.acceptedAnswers?.map((item) => normalizeTerm(item)).filter(Boolean) ?? [normalizedTerm],
+      draft.acceptedAnswers?.map((item) => normalizeTerm(item)).filter(Boolean) ?? [normalizedEntryTerm],
     type: draft.type,
     topic: draft.topic,
     level: draft.level,
@@ -142,13 +142,15 @@ export const importStarterPack = async (topic: Topic, limit = 48) => {
   const db = await dbPromise;
   const all = await db.getAll("entries");
   const existingTerms = new Set(all.map((entry) => entry.normalizedTerm));
-  const tx = db.transaction("entries", "readwrite");
   const dictionaryEntries = await loadDictionaryEntries();
+  const tx = db.transaction("entries", "readwrite");
 
-  const candidates = dictionaryEntries
-    .filter((item) => item.topic === topic)
-    .filter((item) => !existingTerms.has(item.normalizedTerm))
-    .slice(0, limit);
+  const candidates = selectEntriesForImport(
+    dictionaryEntries
+      .filter((item) => item.topic === topic)
+      .filter((item) => !existingTerms.has(item.normalizedTerm)),
+    limit,
+  );
 
   for (const item of candidates) {
     await tx.store.put(createEntryFromDictionary(item));
@@ -158,15 +160,32 @@ export const importStarterPack = async (topic: Topic, limit = 48) => {
   return candidates.length;
 };
 
-const normalizeTerm = (term: string) =>
-  term
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, " ");
+export const importSourceTopicPack = async (sourceTopic: string, limit = 48) => {
+  const db = await dbPromise;
+  const all = await db.getAll("entries");
+  const existingTerms = new Set(all.map((entry) => entry.normalizedTerm));
+  const dictionaryEntries = await loadDictionaryEntries();
+  const tx = db.transaction("entries", "readwrite");
+
+  const candidates = selectEntriesForImport(
+    dictionaryEntries
+      .filter((item) => item.sourceTopics.includes(sourceTopic))
+      .filter((item) => !existingTerms.has(item.normalizedTerm)),
+    limit,
+  );
+
+  for (const item of candidates) {
+    await tx.store.put(createEntryFromDictionary(item));
+  }
+
+  await tx.done;
+  return candidates.length;
+};
 
 const getStarterEntries = async () => {
   const dictionaryEntries = await loadDictionaryEntries();
   const perTopic: Record<Topic, number> = {
+    general: 24,
     it: 40,
     software: 40,
     management: 40,
@@ -175,13 +194,48 @@ const getStarterEntries = async () => {
   const selected: Entry[] = [];
 
   (Object.keys(perTopic) as Topic[]).forEach((topic) => {
-    dictionaryEntries
-      .filter((entry) => entry.topic === topic)
-      .slice(0, perTopic[topic])
-      .forEach((entry) => {
+    selectEntriesForImport(
+      dictionaryEntries.filter((entry) => entry.topic === topic),
+      perTopic[topic],
+    ).forEach((entry) => {
         selected.push(createEntryFromDictionary(entry));
       });
   });
 
+  selectEntriesForImport(
+    dictionaryEntries.filter((entry) => entry.sourceTopics.includes("business-conversation")),
+    20,
+  ).forEach((entry) => {
+    selected.push(createEntryFromDictionary(entry));
+  });
+
   return selected;
+};
+
+const selectEntriesForImport = (entries: DictionaryEntry[], limit: number) => {
+  const typeTargets: Record<EntryType, number> = {
+    word: Math.max(1, Math.round(limit * 0.55)),
+    phrase: Math.max(1, Math.round(limit * 0.1)),
+    sentence: Math.max(1, Math.round(limit * 0.35)),
+  };
+
+  const selected: DictionaryEntry[] = [];
+  const selectedIds = new Set<string>();
+
+  const pushUnique = (entry: DictionaryEntry) => {
+    if (selected.length >= limit || selectedIds.has(entry.id)) return;
+    selected.push(entry);
+    selectedIds.add(entry.id);
+  };
+
+  (Object.keys(typeTargets) as EntryType[]).forEach((type) => {
+    entries
+      .filter((entry) => entry.type === type)
+      .slice(0, typeTargets[type])
+      .forEach(pushUnique);
+  });
+
+  entries.forEach(pushUnique);
+
+  return selected.slice(0, limit);
 };

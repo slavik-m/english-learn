@@ -3,7 +3,7 @@ import { type DictionaryEntry } from "../types";
 type DictionaryMeta = {
   generatedAt: string;
   count: number;
-  byTopic: Record<"it" | "software" | "management", number>;
+  byTopic: Record<"general" | "it" | "software" | "management", number>;
   byType: Record<"word" | "phrase" | "sentence", number>;
   byLevel: Record<"A2" | "B1" | "B2", number>;
 };
@@ -11,20 +11,60 @@ type DictionaryMeta = {
 let dictionaryEntriesPromise: Promise<DictionaryEntry[]> | null = null;
 let dictionaryMetaPromise: Promise<DictionaryMeta> | null = null;
 
+const mergeMeta = (left: DictionaryMeta, right: DictionaryMeta): DictionaryMeta => ({
+  generatedAt: right.generatedAt > left.generatedAt ? right.generatedAt : left.generatedAt,
+  count: left.count + right.count,
+  byTopic: {
+    general: (left.byTopic.general ?? 0) + (right.byTopic.general ?? 0),
+    it: (left.byTopic.it ?? 0) + (right.byTopic.it ?? 0),
+    software: (left.byTopic.software ?? 0) + (right.byTopic.software ?? 0),
+    management: (left.byTopic.management ?? 0) + (right.byTopic.management ?? 0),
+  },
+  byType: {
+    word: left.byType.word + right.byType.word,
+    phrase: left.byType.phrase + right.byType.phrase,
+    sentence: left.byType.sentence + right.byType.sentence,
+  },
+  byLevel: {
+    A2: left.byLevel.A2 + right.byLevel.A2,
+    B1: left.byLevel.B1 + right.byLevel.B1,
+    B2: left.byLevel.B2 + right.byLevel.B2,
+  },
+});
+
 export const normalizeTerm = (value: string) =>
   value
+    .replace(/[’‘`]/g, "'")
+    .replace(/…/g, "...")
     .trim()
     .toLowerCase()
-    .replace(/\s+/g, " ");
+    .replace(/\s+/g, " ")
+    .replace(/^[\s"'([{]+|[.!?…,"')\]}]+$/g, "");
 
 export const loadDictionaryEntries = () => {
   if (!dictionaryEntriesPromise) {
-    dictionaryEntriesPromise = fetch("/dictionary.generated.json").then(async (response) => {
-      if (!response.ok) {
-        throw new Error(`Failed to load dictionary entries: ${response.status}`);
+    dictionaryEntriesPromise = Promise.all([
+      fetch("/dictionary.generated.json"),
+      fetch("/common-english.generated.json"),
+      fetch("/business-conversation.generated.json"),
+    ]).then(async ([mainResponse, commonResponse, businessResponse]) => {
+      if (!mainResponse.ok) {
+        throw new Error(`Failed to load dictionary entries: ${mainResponse.status}`);
+      }
+      if (!commonResponse.ok) {
+        throw new Error(`Failed to load common English entries: ${commonResponse.status}`);
+      }
+      if (!businessResponse.ok) {
+        throw new Error(`Failed to load business conversation entries: ${businessResponse.status}`);
       }
 
-      return (await response.json()) as DictionaryEntry[];
+      const [mainEntries, commonEntries, businessEntries] = await Promise.all([
+        mainResponse.json() as Promise<DictionaryEntry[]>,
+        commonResponse.json() as Promise<DictionaryEntry[]>,
+        businessResponse.json() as Promise<DictionaryEntry[]>,
+      ]);
+
+      return [...commonEntries, ...businessEntries, ...mainEntries];
     });
   }
 
@@ -33,12 +73,28 @@ export const loadDictionaryEntries = () => {
 
 export const loadDictionaryMeta = () => {
   if (!dictionaryMetaPromise) {
-    dictionaryMetaPromise = fetch("/dictionary.meta.json").then(async (response) => {
-      if (!response.ok) {
-        throw new Error(`Failed to load dictionary meta: ${response.status}`);
+    dictionaryMetaPromise = Promise.all([
+      fetch("/dictionary.meta.json"),
+      fetch("/common-english.meta.json"),
+      fetch("/business-conversation.meta.json"),
+    ]).then(async ([mainResponse, commonResponse, businessResponse]) => {
+      if (!mainResponse.ok) {
+        throw new Error(`Failed to load dictionary meta: ${mainResponse.status}`);
+      }
+      if (!commonResponse.ok) {
+        throw new Error(`Failed to load common English meta: ${commonResponse.status}`);
+      }
+      if (!businessResponse.ok) {
+        throw new Error(`Failed to load business conversation meta: ${businessResponse.status}`);
       }
 
-      return (await response.json()) as DictionaryMeta;
+      const [mainMeta, commonMeta, businessMeta] = await Promise.all([
+        mainResponse.json() as Promise<DictionaryMeta>,
+        commonResponse.json() as Promise<DictionaryMeta>,
+        businessResponse.json() as Promise<DictionaryMeta>,
+      ]);
+
+      return mergeMeta(mergeMeta(mainMeta, commonMeta), businessMeta);
     });
   }
 
@@ -56,28 +112,31 @@ export const searchDictionaryEntries = (dictionaryEntries: DictionaryEntry[], qu
     .map((entry) => {
       let score = 0;
       let matched = false;
+      const normalizedEntryTerm = normalizeTerm(entry.term);
+      const normalizedTranslations = entry.translations.map(normalizeTerm);
+      const normalizedTags = entry.tags.map(normalizeTerm);
 
-      if (entry.normalizedTerm === normalizedQuery) {
+      if (normalizedEntryTerm === normalizedQuery) {
         score += 500;
         matched = true;
       }
-      if (entry.normalizedTerm.startsWith(normalizedQuery)) {
+      if (normalizedEntryTerm.startsWith(normalizedQuery)) {
         score += 250;
         matched = true;
       }
-      if (entry.term.toLowerCase().startsWith(normalizedQuery)) {
+      if (normalizedEntryTerm.startsWith(normalizedQuery)) {
         score += 180;
         matched = true;
       }
-      if (entry.normalizedTerm.includes(normalizedQuery)) {
+      if (normalizedEntryTerm.includes(normalizedQuery)) {
         score += 120;
         matched = true;
       }
-      if (entry.translations.some((item) => item.toLowerCase().includes(normalizedQuery))) {
+      if (normalizedTranslations.some((item) => item.includes(normalizedQuery))) {
         score += 90;
         matched = true;
       }
-      if (entry.tags.some((item) => item.toLowerCase().includes(normalizedQuery))) {
+      if (normalizedTags.some((item) => item.includes(normalizedQuery))) {
         score += 50;
         matched = true;
       }

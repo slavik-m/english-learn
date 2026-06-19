@@ -1,6 +1,6 @@
 # English Learn Cards
 
-Offline-first PWA for learning English words, phrases, and topic sentences in the domains of `IT`, `Software`, and `Management`.
+Offline-first PWA for learning English words, phrases, and topic sentences in `General English`, `IT`, `Software`, and `Management`.
 
 The app is built for mobile-first usage and keeps all user data on the device. No sync backend is used in the current MVP.
 
@@ -62,6 +62,8 @@ Used sources:
 
 - `Kaikki / Wiktionary` topic dumps for dictionary entries
 - `Tatoeba` bilingual sentence pairs for context sentences
+- authored `common English` curated dataset for high-frequency everyday words
+- authored `business conversation` curated dataset for meetings, calls, statuses, and work communication
 
 Reason:
 
@@ -101,9 +103,11 @@ Reason:
 
 ### Starter Packs
 
+- `Common English`
 - `IT`
 - `Software`
 - `Management`
+- `Business Conversation`
 
 Import pulls entries from the local dictionary into the user deck.
 
@@ -169,21 +173,24 @@ Aggregated in UI:
 
 Current generated dataset:
 
-- `1236` total entries
-- `833` words
+- `1478` total entries
+- `998` words
 - `43` phrases
-- `360` sentences
+- `437` sentences
 
 By topic:
 
+- `General`: `165`
 - `IT`: `475`
 - `Software`: `250`
-- `Management`: `511`
+- `Management`: `588`
 
 Generation pipeline:
 
 - [scripts/build-dictionary.mjs](scripts/build-dictionary.mjs)
 - [scripts/augment-dictionary.py](scripts/augment-dictionary.py)
+- [scripts/build-common-english.mjs](scripts/build-common-english.mjs)
+- [scripts/build-business-conversation.mjs](scripts/build-business-conversation.mjs)
 
 Build command:
 
@@ -199,6 +206,10 @@ npm run build:dictionary
 - [src/styles.css](src/styles.css) — mobile-first styling
 - [public/dictionary.generated.json](public/dictionary.generated.json) — runtime dictionary asset
 - [public/dictionary.meta.json](public/dictionary.meta.json) — dataset metadata
+- [public/common-english.generated.json](public/common-english.generated.json) — curated high-frequency English asset
+- [public/common-english.meta.json](public/common-english.meta.json) — curated dataset metadata
+- [public/business-conversation.generated.json](public/business-conversation.generated.json) — curated business communication dataset
+- [public/business-conversation.meta.json](public/business-conversation.meta.json) — business communication dataset metadata
 - [vite.config.ts](vite.config.ts) — Vite + PWA config
 
 ## Run
