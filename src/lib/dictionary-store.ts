@@ -10,6 +10,7 @@ type DictionaryMeta = {
 
 let dictionaryEntriesPromise: Promise<DictionaryEntry[]> | null = null;
 let dictionaryMetaPromise: Promise<DictionaryMeta> | null = null;
+const assetUrl = (path: string) => new URL(path, import.meta.env.BASE_URL).toString();
 
 const mergeMeta = (left: DictionaryMeta, right: DictionaryMeta): DictionaryMeta => ({
   generatedAt: right.generatedAt > left.generatedAt ? right.generatedAt : left.generatedAt,
@@ -44,9 +45,9 @@ export const normalizeTerm = (value: string) =>
 export const loadDictionaryEntries = () => {
   if (!dictionaryEntriesPromise) {
     dictionaryEntriesPromise = Promise.all([
-      fetch("/dictionary.generated.json"),
-      fetch("/common-english.generated.json"),
-      fetch("/business-conversation.generated.json"),
+      fetch(assetUrl("dictionary.generated.json")),
+      fetch(assetUrl("common-english.generated.json")),
+      fetch(assetUrl("business-conversation.generated.json")),
     ]).then(async ([mainResponse, commonResponse, businessResponse]) => {
       if (!mainResponse.ok) {
         throw new Error(`Failed to load dictionary entries: ${mainResponse.status}`);
@@ -74,9 +75,9 @@ export const loadDictionaryEntries = () => {
 export const loadDictionaryMeta = () => {
   if (!dictionaryMetaPromise) {
     dictionaryMetaPromise = Promise.all([
-      fetch("/dictionary.meta.json"),
-      fetch("/common-english.meta.json"),
-      fetch("/business-conversation.meta.json"),
+      fetch(assetUrl("dictionary.meta.json")),
+      fetch(assetUrl("common-english.meta.json")),
+      fetch(assetUrl("business-conversation.meta.json")),
     ]).then(async ([mainResponse, commonResponse, businessResponse]) => {
       if (!mainResponse.ok) {
         throw new Error(`Failed to load dictionary meta: ${mainResponse.status}`);

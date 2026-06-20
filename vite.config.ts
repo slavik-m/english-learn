@@ -2,7 +2,10 @@ import { defineConfig } from "vite";
 import solid from "vite-plugin-solid";
 import { VitePWA } from "vite-plugin-pwa";
 
+const base = "/english-learn/";
+
 export default defineConfig({
+  base,
   plugins: [
     solid(),
     VitePWA({
@@ -23,21 +26,21 @@ export default defineConfig({
         background_color: "#f3f4f6",
         display: "standalone",
         orientation: "portrait",
-        start_url: "/",
-        scope: "/",
+        start_url: base,
+        scope: base,
         icons: [
           {
-            src: "/pwa-192x192.png",
+            src: `${base}pwa-192x192.png`,
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/pwa-512x512.png",
+            src: `${base}pwa-512x512.png`,
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/maskable-icon-512x512.png",
+            src: `${base}maskable-icon-512x512.png`,
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
