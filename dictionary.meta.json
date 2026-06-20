@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-19T11:16:13.853241Z",
+  "count": 1236,
+  "byTopic": {
+    "it": 475,
+    "software": 250,
+    "management": 511
+  },
+  "byType": {
+    "word": 833,
+    "phrase": 43,
+    "sentence": 360
+  },
+  "byLevel": {
+    "A2": 59,
+    "B1": 806,
+    "B2": 371
+  }
+}
